@@ -7,5 +7,3 @@ CREATE TABLE cars
     
     CONSTRAINT PRIMARY KEY(id)
 );
-
-what is unsigned, CONSTRAINT,  and auto_increment
