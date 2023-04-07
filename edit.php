@@ -1,5 +1,5 @@
 <?php 
- //error_reporting(0);
+ error_reporting(0);
 
 require_once __DIR__ . "/connectiondb.php";
 require_once __DIR__ . "/functions.php";
@@ -11,17 +11,13 @@ $sqls = "SELECT * FROM cars WHERE id = :id";
 $statement = $pdoconn->prepare($sqls);
 $statement->execute(['id' => $id_decrypt]);
 
-/*
+
 if($statement->rowCount() == 0){
     header("Location: indexlist.php");
     die();
-} */
+} 
 
-// za select nna kolite da gi lista
-//$car = $statement->fetch();
-//fetch_assoc()
 $car = $statement->fetch();
-
 ?>
 
 
@@ -55,8 +51,7 @@ $car = $statement->fetch();
         if($car['year'] == $i){
             $selected_value = 'selected';
             echo "<option $selected_value value='$i'>$i</option>"; // za gi lista od 0 do 23ta 
-        }
-        
+        }   
     }
     ?>
     </select> <br>
