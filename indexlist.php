@@ -56,13 +56,9 @@ if($statement->rowCount() == 0){
                 $counter++;
     }
 }
-
-// <a href='delete.php?id={$rowcar['id']}'>Delete</a> 
-// so ova me nosi na delete.php failot i go zimam toa id so e stiklirano t.e. toj row i vo
-// delete.php pravam logika za delete na toj row 
+ 
 ?>
 </tbody>
-</table>
-  
+</table> 
 </body>
 </html>
